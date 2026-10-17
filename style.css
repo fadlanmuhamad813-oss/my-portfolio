@@ -4775,25 +4775,24 @@ body.theme-light .hl-tags span {
 /* CSS Form Web3Forms — copy dari chat sebelumnya */
 
 /* ============================================================
-   FIX FORM KONTAK (ANTI BENTROK TAILWIND)
+   FIX FORM KONTAK (ANTI TAILWIND)
    ============================================================ */
 .kontak-form-wrap {
-  max-width: 600px;
-  margin: 40px auto 0;
-  padding: 32px 28px;
-  background: rgba(255, 255, 255, 0.022);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 20px;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  position: relative;
+  max-width: 600px !important;
+  margin: 40px auto 0 !important;
+  padding: 32px 28px !important;
+  background: rgba(255, 255, 255, 0.022) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 20px !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  position: relative !important;
 }
 
 .kontak-form {
   display: flex !important;
   flex-direction: column !important;
   gap: 24px !important;
-  /* Jarak antar field */
 }
 
 .form-group {
@@ -4812,7 +4811,7 @@ body.theme-light .hl-tags span {
   margin: 0 !important;
 }
 
-/* Paksa input & textarea jadi gelap */
+/* KUNCI: Paksa input jadi gelap, kalahin Tailwind */
 .form-group input,
 .form-group textarea {
   width: 100% !important;
@@ -4826,6 +4825,8 @@ body.theme-light .hl-tags span {
   transition: all 0.3s ease !important;
   box-sizing: border-box !important;
   outline: none !important;
+  box-shadow: none !important;
+  /* Matiin shadow Tailwind */
 }
 
 .form-group input:focus,

@@ -1591,4 +1591,61 @@
     initTheme();
   }
 })();
-/* JS Form Web3Forms — copy dari chat sebelumnya */
+
+/* ============================================================
+   18. KONTAK FORM (WEB3FORMS)
+   ============================================================ */
+(function () {
+  "use strict";
+
+  function initContactForm() {
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+
+    const submitBtn = document.getElementById("submitBtn");
+    const btnText = document.getElementById("btnText");
+    const formResult = document.getElementById("formResult");
+    const originalText = btnText.textContent;
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      submitBtn.disabled = true;
+      btnText.textContent = "Mengirim...";
+      formResult.textContent = "";
+      formResult.className = "form-result";
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData,
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          formResult.textContent = "Pesan lo udah kekirim. Gue bakal bales secepatnya!";
+          formResult.className = "form-result success";
+          form.reset();
+        } else {
+          formResult.textContent = "Gagal ngirim. Coba lagi nanti ya.";
+          formResult.className = "form-result error";
+        }
+      } catch (error) {
+        formResult.textContent = "Ada masalah koneksi. Coba cek internet lo.";
+        formResult.className = "form-result error";
+      } finally {
+        submitBtn.disabled = false;
+        btnText.textContent = originalText;
+      }
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initContactForm);
+  } else {
+    initContactForm();
+  }
+})();
