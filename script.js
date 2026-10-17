@@ -243,10 +243,10 @@
       jejak_sub: "A story of numbers, curiosity, and building things.",
 
       /* ANOADEV */
-      anoa_eyebrow: "Side Venture",
-      anoa_title_1: "Membangun sesuatu di luar finance —",
-      anoa_desc: "Studio kecil yang fokus pada tools keuangan dan sistem bisnis. Cara saya mengasah problem-solving dan berpikir end-to-end.",
-      anoa_quote: "\"Tech is not my career — it's my toolkit to solve finance problems better.\"",
+     anoa_eyebrow: "Side Venture",
+anoa_title_1: "Perusahaan yang gua bangun bareng kembaran gua —",
+anoa_desc: "Berdiri sejak Oktober 2025. Udah handle project dari pemerintah dan swasta — dari POS, ERP bengkel, sampai website company profile.",
+anoa_quote: "\"Tech is not my career — it's my toolkit to solve finance problems better.\"",
 
       /* KONTAK */
       kontak_eyebrow: "Kontak", kontak_title_1: "Mari", kontak_title_2: "Terhubung",
@@ -443,8 +443,8 @@ hl_3_tag2: "Integrity",
 
       /* ANOADEV */
       anoa_eyebrow: "Side Venture",
-      anoa_title_1: "Building something beyond finance —",
-      anoa_desc: "A small studio focused on financial tools and business systems. My way of sharpening problem-solving and end-to-end thinking.",
+      anoa_title_1: "A company I built with my twin brother —",
+      anoa_desc: "Founded in October 2025. We've handled projects for both government and private clients — from POS systems, workshop ERPs, to company profile websites.",
       anoa_quote: "\"Tech is not my career — it's my toolkit to solve finance problems better.\"",
 
       /* KONTAK */
@@ -640,8 +640,8 @@ profil_values: "القيم الأساسية",
 
       /* ANOADEV */
       anoa_eyebrow: "مشروع جانبي",
-      anoa_title_1: "بناء شيء خارج المالية —",
-      anoa_desc: "استوديو صغير يركز على الأدوات المالية وأنظمة الأعمال. طريقتي في صقل حل المشكلات والتفكير الشامل.",
+      anoa_title_1: "شركة بنيتها مع أخي التوأم —",
+      anoa_desc: "تأسست في أكتوبر 2025. تعاملنا مع مشاريع لجهات حكومية وخاصة — من أنظمة نقاط البيع، وأنظمة ERP للورش، إلى مواقع تعريف الشركات.",
       anoa_quote: "\"التقنية ليست مهنتي — إنها أداتي لحل المشكلات المالية بشكل أفضل.\"",
 
       /* KONTAK */
