@@ -137,8 +137,8 @@
 
       /* SKILLS */
       skills_eyebrow: "Skills & Tools",
-      skills_title_1: "Yang gue", skills_title_2: "kuasai.",
-      skills_desc: "Tools & kemampuan yang gue gunakan sehari-hari untuk bekerja, menganalisis, dan membangun.",
+      skills_title_1: "Yang gua", skills_title_2: "kuasai.",
+      skills_desc: "Tools & kemampuan yang gua gunakan sehari-hari untuk bekerja, menganalisis, dan membangun.",
       skills_cat_finance: "Core Finance",
       skills_cat_data: "Data & Analytics",
       skills_cat_dev: "Development (Supporting)",
