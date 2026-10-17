@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="loader-bar"><div class="loader-bar-fill"></div></div>
-        <p class="loader-text">Portfolio · 2026</p>
+        <p class="loader-text">Portfolio 2026</p>
       </div>
     </div>
 
@@ -175,10 +175,10 @@
               ><span class="typing-cursor">|</span>
             </h1>
             <p class="hero-role reveal" data-i18n="hero_role">
-              Credit Analyst — Risk & Financial Operations
+              Credit Analyst · Risk & Financial Operations
             </p>
             <p class="hero-role-id reveal" data-i18n="hero_role_id">
-              Analis Kredit · Audit Internal · Otomasi Data Keuangan
+              Fokus di analisis kredit, audit internal, dan otomasi data
             </p>
             <div class="hero-stats reveal">
               <div class="hero-stat">
@@ -1503,8 +1503,41 @@
             <span>WhatsApp</span>
           </a>
         </div>
+                <!-- FORM KONTAK WEB3FORMS -->
+        <div class="kontak-form-wrap reveal">
+          <form id="contactForm" class="kontak-form">
+            <!-- ACCESS KEY DARI WEB3FORMS -->
+            <input type="hidden" name="access_key" value="d930304f-1fce-4a43-9f5e-8f8d5189f039" />
+            
+            <!-- Anti-bot -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
+            <div class="form-group">
+              <label for="name">Nama Lo</label>
+              <input type="text" name="name" id="name" placeholder="Nama lengkap lo" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Lo</label>
+              <input type="email" name="email" id="email" placeholder="email@contoh.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea name="message" id="message" rows="4" placeholder="Tulis pesan lo di sini..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn-chrome">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span id="btnText">Kirim Pesan</span>
+            </button>
+
+            <p id="formResult" class="form-result"></p>
+          </form>
+        </div>
       </div>
     </section>
+
 
     <!-- FOOTER -->
     <footer class="site-footer">
