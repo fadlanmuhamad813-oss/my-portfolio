@@ -1608,39 +1608,39 @@
     const originalText = btnText.textContent;
 
     form.addEventListener("submit", async function (e) {
-      e.preventDefault();
+  e.preventDefault();
 
-      submitBtn.disabled = true;
-      btnText.textContent = "Mengirim...";
-      formResult.textContent = "";
-      formResult.className = "form-result";
+  submitBtn.disabled = true;
+  btnText.textContent = "Mengirim...";
+  formResult.textContent = "";
+  formResult.className = "form-result";
 
-      const formData = new FormData(form);
+  const formData = new FormData(form);
 
-      try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          body: formData,
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-          formResult.textContent = "Pesan lo udah kekirim. Gue bakal bales secepatnya!";
-          formResult.className = "form-result success";
-          form.reset();
-        } else {
-          formResult.textContent = "Gagal ngirim. Coba lagi nanti ya.";
-          formResult.className = "form-result error";
-        }
-      } catch (error) {
-        formResult.textContent = "Ada masalah koneksi. Coba cek internet lo.";
-        formResult.className = "form-result error";
-      } finally {
-        submitBtn.disabled = false;
-        btnText.textContent = originalText;
-      }
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
     });
+
+    const data = await response.json();
+
+    if (data.success) {
+      formResult.textContent = "Pesan lo udah kekirim. Gue bakal bales secepatnya!";
+      formResult.className = "form-result success";
+      form.reset();
+    } else {
+      formResult.textContent = "Gagal ngirim: " + (data.message || "Coba lagi nanti ya.");
+      formResult.className = "form-result error";
+    }
+  } catch (error) {
+    formResult.textContent = "Ada masalah koneksi. Coba cek internet lo.";
+    formResult.className = "form-result error";
+  } finally {
+    submitBtn.disabled = false;
+    btnText.textContent = originalText;
+  }
+});
   }
 
   if (document.readyState === "loading") {
